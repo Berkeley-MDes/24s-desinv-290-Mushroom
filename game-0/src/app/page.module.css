@@ -1,18 +1,22 @@
-.main {
+/* Container for the entire page content, centered */
+.page-container {
+  width: 75vw; /* 75% of the viewport width */
+  height: 75vh; /* 75% of the viewport height */
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 6rem;
-  min-height: 100vh;
+  background-color: #fff; /* Optional: background color for the page container */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: adds shadow for better visibility */
+  overflow: auto; /* Adds scrollbars if content overflows */
 }
 
 
-/* Assuming this CSS is in a file like styles.css */
 
 /* Container for the input and button */
 .form-container {
   margin-bottom: 20px;
+  width: 90%; /* Sets the width to 90% of its parent container */
 }
 
 /* Grid container for translations and images */
@@ -20,8 +24,8 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
-  margin-top: 20px;
-  height:50%;
+  width: 90%; /* Sets the width to 90% of its parent container */
+  overflow-y: auto; /* Ensures the grid itself can scroll if items exceed the available height */
 }
 
 /* Individual grid item */

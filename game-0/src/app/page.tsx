@@ -47,7 +47,7 @@ export default function Home() {
     };
 
     return (
-      <div>
+      <div className="page-container">
           <div className="form-container">
               <input
                   type="text"
