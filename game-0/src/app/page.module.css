@@ -1,43 +1,60 @@
-/* Container for the entire page content, centered */
-.page-container {
-  width: 75vw; /* 75% of the viewport width */
-  height: 75vh; /* 75% of the viewport height */
+/* page.module.css */
+.pageContainer {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  background-color: #fff; /* Optional: background color for the page container */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Optional: adds shadow for better visibility */
-  overflow: auto; /* Adds scrollbars if content overflows */
+  justify-content: center;
+  padding: 20px;
+  background-color: #ffffff; /* Light background color for the page */
+  width: 100%;
+  box-sizing: border-box;
 }
 
-
-
-/* Container for the input and button */
-.form-container {
+.formContainer {
+  width: 100%;
+  max-width: 600px; /* Limits the form width */
   margin-bottom: 20px;
-  width: 90%; /* Sets the width to 90% of its parent container */
-}
-
-/* Grid container for translations and images */
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  width: 90%; /* Sets the width to 90% of its parent container */
-  overflow-y: auto; /* Ensures the grid itself can scroll if items exceed the available height */
-}
-
-/* Individual grid item */
-.grid-item {
-  border: 1px solid #ccc;
+  margin-left: 0px;
   padding: 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(255, 255, 255, 0.397);
+  border-radius: 8px;
 }
 
-/* Styling for the images */
-.grid-item img {
-  width: 100%; /* Makes the image fill the container */
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Creates two columns */
+  grid-template-rows: repeat(2, 1fr); /* Creates two rows */
+  gap: 30px; /* Space between grid items */
+  width: 80%; /* Adjust width of the grid container */
+  max-width: 960px; /* Maximum width of the grid */
+  margin: 0 auto; /* Centering the grid */
+}
+
+.gridItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  overflow: hidden; /* Ensures no overflow of content */
+}
+
+.gridItem img {
+  width: 100%; /* Full width to ensure it covers the grid */
   height: auto; /* Maintains the aspect ratio of the image */
+  max-height: 200px; /* Maximum height for the images */
+  object-fit: cover; /* Ensures the image covers the designated area nicely */
+}
+
+.gridItem p {
+  text-align: center;
+  font-size: 16px;
+  color: #333;
   margin-top: 10px;
 }

@@ -8,5 +8,5 @@ body, html {
   display: flex;
   justify-content: center;
   align-items: center; /* This centers the children vertically */
-  background-color: #f4f4f4; /* Optional: adds a background color */
+  background-color: #ffffff; /* Optional: adds a background color */
 }
