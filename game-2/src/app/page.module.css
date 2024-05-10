@@ -1,0 +1,23 @@
+.pageContainer {
+  display: flex; /* Establishes a flex container */
+  justify-content: center; /* Centers children horizontally */
+  align-items: start; /* Aligns children to the top */
+  gap: 20px; /* Space between the text area/buttons group and the image */
+  padding: 20px; /* Padding around the entire container */
+}
+
+.inputContainer {
+  display: flex; /* Makes this a flex container too */
+  flex-direction: column; /* Stacks children vertically */
+  gap: 10px; /* Space between elements inside the container */
+}
+
+.textArea {
+  width: 300px; /* Sets a fixed width for the text area */
+  height: 150px; /* Sets a fixed height for the text area */
+}
+
+.image {
+  max-width: 600px; /* Restricts image width */
+  height: auto; /* Keeps the image aspect ratio */
+}
