@@ -51,7 +51,7 @@ const TextAreaWithPopover: React.FC<TextAreaWithPopoverProps> = ({ userPrompt, s
                     <button onClick={() => translateText('fr')}>French</button>
                     <button onClick={() => translateText('de')}>German</button>
                     <button onClick={() => translateText('ko')}>Korean</button>
-                    <button onClick={() => translateText('zh')}>Chinese</button>
+                    <button onClick={() => translateText('es')}>Spanish</button>
                 </div>
             )}
         </div>
