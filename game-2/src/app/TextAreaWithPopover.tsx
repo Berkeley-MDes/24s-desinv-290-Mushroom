@@ -16,6 +16,7 @@ const TextAreaWithPopover: React.FC<TextAreaWithPopoverProps> = ({ userPrompt, s
         const selectedText = window.getSelection()?.toString();
         if (!selectedText) return;
 
+        console.log(`Translating text: "${selectedText}" to ${language}`);
         setShowPopover(false); // Hide popover after selecting an option
         onTranslate(selectedText, language);
     };
@@ -50,6 +51,7 @@ const TextAreaWithPopover: React.FC<TextAreaWithPopoverProps> = ({ userPrompt, s
                     <button onClick={() => translateText('fr')}>French</button>
                     <button onClick={() => translateText('de')}>German</button>
                     <button onClick={() => translateText('ko')}>Korean</button>
+                    <button onClick={() => translateText('zh')}>Chinese</button>
                 </div>
             )}
         </div>
